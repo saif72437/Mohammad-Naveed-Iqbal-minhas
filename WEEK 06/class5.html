@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs inline elements</title>
+    <style>
+        /* 
+        
+            block element:
+                - It will always come in new line
+                - It will take parent width form left to right
+                - It will take height and width
+                - It will take margin and padding from all sides
+
+                examples: div, p, h1 - h6 
+            
+            Inline Elements:
+                - It will always come in same line
+                - It will take width fit to the content
+                - It will not take custom height and width
+                - It will take margin only from left and right
+                - It will take padding from all sides
+
+                examples: span, i, b 
+
+        
+        */
+        div{
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+            padding: 20px;
+        }
+        p{
+            background-color: purple;
+            color: white;
+            height: 200px;
+            width: 200px;
+        }
+        span{
+            background-color: lightcoral;
+            height: 200px;
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+        }
+        i{
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit.</div>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <span>I am span</span>
+    <i>I am italic tag</i>
+</body>
+</html>

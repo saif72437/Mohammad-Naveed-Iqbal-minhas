@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* tag name or element selector */
+        p{
+            background-color: lightblue;
+        }
+        div{
+            background-color: purple;
+            color: white;
+        }
+
+        /* id selector
+            we have to # before id name
+        */
+        #myName{
+            background-color: lightcoral;
+            margin-top: 10px;
+            height: 200px;
+            width: 200px;
+        }
+        /* class selector
+            we have to use . before class name
+        */
+        .myText{
+            background-color: crimson;
+            margin-top: 20px;
+            width: 400px;
+        }
+        .myHeading2{
+            font-size: 60px;
+        }
+
+        /* child selector */
+        div p{
+            background-color: blue;
+            color: white;
+        }
+
+        /* group selector */
+        h3, h4, span{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div>Lorem ipsum dolor sit amet.</div>
+
+    <!-- id will be unique like CNIC number -->
+     <div id="myName">Saifullah Khan</div>
+
+     <!-- class selector
+        You can give one class to many element
+        You can also give mulitple classes to one element 
+     
+     -->
+     <h2 class="myText myHeading2">This is heading 2</h2>
+     <p class="myText">this is paragraph</p>
+     <section class="myText">This is section</section>
+
+
+     <!-- child selector -->
+     <div>
+        <p>this is p inside article</p>
+     </div>
+
+     <!-- group selector -->
+      <h3>this is heading 3</h3>
+      <h4>this is h4</h4>
+      <span>this is span</span>
+
+</body>
+</html>
