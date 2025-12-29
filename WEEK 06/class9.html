@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors in CSS</title>
+    <style>
+        .named-color{
+            background-color: lightblue;
+
+        }
+        .hexa-color{
+            /* 
+                decimal = 10 - 0 to 9
+                hexa = 16 - 0 to 9 and A to F
+
+                0 - black
+                F - white
+
+                three digit:
+                    #red,green,blue
+                    #FFF - white
+                    #F00 - red
+                    #0F0 - green
+                    #00F - blue
+                    #00F3 - Alpha -opacity
+
+                6 digits
+                    #FF2100
+                    FF-  Red
+                    21 - Green
+                    00 - Blue
+
+            */
+            background-color: #0a9a1baa;
+        }
+
+        .rgba{
+            /* 
+                0 - 255
+                0 - Black
+                255 - White
+
+                r - red
+                g - green
+                b - blue
+                a - alpha -opacity - 0 - 1
+
+            
+            */
+            background-color: rgba(232, 197, 25, 0.542);
+        }
+        .hsl{
+            background-color: hsla(287, 100%, 50%, 0.467);
+        }
+    </style>
+</head>
+<body>
+    <div class="named-color">Named Color</div>
+
+    <div class="hexa-color">Hexa Colors</div>
+
+    <div class="rgba">RGBA Color</div>
+
+    <div class="hsl">HSL</div>
+
+</body>
+</html>
