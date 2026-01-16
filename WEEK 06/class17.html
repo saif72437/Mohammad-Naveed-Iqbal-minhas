@@ -11,6 +11,7 @@
             background-color: lightblue;
             display: flex;
             gap: 20px;
+            position: relative;
         }
         .child{
             height: 100px;
@@ -27,6 +28,21 @@
                 position relative
                     - it will not leave its orignal space
                     - it will move with respect to its orignal space
+                
+                
+            */
+        }
+        #child3{
+            position: absolute;
+            top: 200px;
+            left: 40px;
+
+            /* 
+                position absolute:
+                    It will leave its orignal space
+                    It will move with respect to its nearest parent positioned element
+
+            
             */
         }
     </style>

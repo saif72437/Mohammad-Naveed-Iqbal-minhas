@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Card</title>
+    <style>
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #C72634;
+        }
+        .card{
+            width: 300px;
+            height: 450px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: -2px 3px 5px 0px rgba(74,14,14,0.79);
+            -webkit-box-shadow: -2px 3px 5px 0px rgba(74,14,14,0.79);
+            -moz-box-shadow: -2px 3px 5px 0px rgba(74,14,14,0.79);
+            position: relative;
+            overflow: hidden;
+        }
+        .half-circle{
+            background-color: #C72634;
+            height: 50%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            clip-path: polygon(
+            0 0,
+            10% 5%,
+            20% 9%,
+            30% 12%,
+            40% 14%,
+            50% 15%,
+            60% 14%,
+            70% 12%,
+            80% 9%,
+            90% 5%,
+            100% 0,
+            100% 100%,
+            0 100%
+            );
+        }
+        img{
+            position: absolute;
+            height: 300px;
+            mix-blend-mode: multiply;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="card">
+            <div class="half-circle"></div>
+            <img src="https://static.netshoes.com.br/produtos/tenis-nike-flyby-mid-masculino/28/HZM-3021-128/HZM-3021-128_zoom1.jpg?ts=1695424836&ims=544x" alt="">
+        </div>
+    </div>
+</body>
+</html>
