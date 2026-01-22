@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Card</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: tomato;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-card{
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            position: relative;
+            font-family: sans-serif;
+        }
+        .apple-card{
+            width: 60%;
+            height: 80%;
+            background-color: red;
+            position: absolute;
+            top: 10%;
+            left: -30%;
+        }
+        .apple-card img{
+            height: 80%;
+            position: absolute;
+            left: -20%;
+            bottom: 10%;
+        }
+        .text-card{
+            width: 55%;
+            height: 90%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+        }
+        .text-card h2{
+            font-size: 2em;
+            color: #212121;
+        }
+        .small-text{
+            color: #414141bc;
+        }
+        .price-container{
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            align-items: end;
+            gap: 20px;
+        }
+        .price-container p{
+            font-style: 16px;
+            color: red;
+        }
+        .price-container .price{
+            font-size: 72px;
+            color: red;
+            font-weight: 500;
+            
+        }
+        .select-color-container{
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .color-container{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .color-container .box{
+            height: 50px;
+            width: 50px;
+            border: 1px solid gray;
+            
+        }
+    </style>
+
+</head>
+<body>
+   <div class="main">
+     <div class="main-card">
+        <div class="text-card">
+            <h2>Delicious food</h2>
+            <p class="small-text">Healty Food</p>
+            <div class="price-container">
+                <p>RS</p>
+                <h1 class="price">50.00</h1>
+            </div>
+            <div class="select-color-container">
+                <p class="small-text">SELECT A COLOR</p>
+                <div class="color-container">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+            <p class="small-text">Benifits</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor </li>
+                <li>Lorem ipsum dolor Lorem ipsum.</li>
+                <li>Lorem ipsum psum dolor sit.</li>
+                <li>Lorem ipsum dolor Lorem i</li>
+            </ul>
+        </div>
+        <div class="apple-card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/052/649/258/small_2x/fresh-red-apple-with-a-slice-showing-its-interior-png.png" alt="">
+        </div>
+    </div>
+   </div>
+</body>
+</html>
