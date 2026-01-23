@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+    <style>
+        .parent{
+            height: 100vh;
+            width: 100vw;
+            background-color: lightblue;
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(7, 100px);
+            row-gap: 10px;
+            column-gap: 20px;
+        }
+        .child{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child">child 4</div>
+        <div class="child">child 5</div>
+        <div class="child">child 6</div>
+        <div class="child">child 7</div>
+        <div class="child">child 8</div>
+        <div class="child">child 9</div>
+        <div class="child">child 9</div>
+        <div class="child">child 9</div>
+        <div class="child">child 9</div>
+        <div class="child">child 9</div>
+        <div class="child">child 9</div>
+        <div class="child">child 9</div>
+        <div class="child">child 9</div>
+        <div class="child">child 9</div>
+        <div class="child">child 9</div>
+        <div class="child">child 9</div>
+    </div>
+</body>
+</html>
