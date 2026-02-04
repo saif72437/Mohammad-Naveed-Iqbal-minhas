@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in css</title>
+    <style>
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            display: grid;
+            place-content: center;
+            font-size: 30px;
+            transition: all ease-in-out 0.5s;
+            
+        }
+
+        .child:hover{
+            transform: rotateX(45deg);
+            transform: rotateY(45deg);
+            transform: rotate(45deg);
+
+            transform: scaleX(2);
+            transform: scaleY(2);
+            transform: scale(2);
+
+            transform: skewX(45deg);
+            transform: skewY(45deg);
+            transform: skew(45deg);
+
+            transform: translateX(200px);
+            transform: translateY(200px);
+            transform: translate(200px, 200px);
+
+            transform: rotate(60deg) scale(2) translateX(200px);
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            box
+        </div>
+    </div>
+</body>
+</html>
