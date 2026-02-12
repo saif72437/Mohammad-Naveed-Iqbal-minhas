@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            animation: changeWidth 2s linear 0.3s 1 forwards;
+        }
+
+        @keyframes changeWidth {
+            from{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            to{
+                width: 100vw;
+                height: 100vh;
+                border-radius: 0;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
